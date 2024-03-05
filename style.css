@@ -1,0 +1,86 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+  
+}   
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100vh;
+
+    
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.faqcontainer{
+    width: 520px;
+    background-color:rgba(255, 255, 255) ;
+    padding: 2.6rem ;
+
+    border-radius: 20px;
+  
+
+}
+.logocon{
+    display: flex;
+    align-items: center;
+    
+    margin: 0 0 1rem 0;
+    gap: 1.45rem;
+}
+.minus{
+    display: none;
+}
+.title{
+    font-size: 3.5rem;
+}
+
+.faqques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.5rem 0;
+    border-top: solid 1px hsla(293, 16%, 49%, 0.151);
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.active{
+    border: none;
+}
+.faqques:hover{
+    color: hsl(292, 82%, 45%);
+    cursor: pointer;
+}
+
+.answeron{
+    display:block;
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    padding-bottom: 1.5rem ;
+}
+.answeroff{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .container{
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding:1.5rem;
+}
+}
